@@ -1,3 +1,5 @@
+package aulasoulcode;
+
 public class Variaveis {
     // execução do nosso programa Java
     public static void main(String[] args){
