@@ -1,3 +1,5 @@
+package aulasoulcode;
+
 import java.util.Scanner;
 
 public class EstudoArrays {

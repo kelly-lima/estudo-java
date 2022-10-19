@@ -2,9 +2,10 @@ package exercicios;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class CalculadoraValores {
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
+       // entrada.useLocale(Locale.US); // caso queira ler double com ponto
 
         System.out.println("Escolha a operação que desja realizar:");
         System.out.println("1- Adição");
@@ -14,30 +15,30 @@ public class Calculadora {
         int operador = entrada.nextInt();
 
         System.out.println("Informe o primeiro valor");
-        int primeirovalor = entrada.nextInt();
+        double primeirovalor = entrada.nextInt();
 
         System.out.println("Escolha o segundo valor: ");
-        int segundovalor = entrada.nextInt();
+        double segundovalor = entrada.nextInt();
 
         switch (operador){
             case 1:
-                int total = primeirovalor + segundovalor;
-                System.out.println("A soma entre os valores vale:  " + total);
+                double soma = primeirovalor + segundovalor;
+                System.out.println("A soma entre os valores vale:  " + soma);
                 break;
 
             case 2:
-                int total2 = primeirovalor - segundovalor;
-                System.out.println("A subtração entre os valores vale: " + total2);
+                double subtracao = primeirovalor - segundovalor;
+                System.out.println("A subtração entre os valores vale: " + subtracao);
                 break;
 
             case 3:
-                int total3 = primeirovalor * segundovalor;
-                System.out.println("A multiplicação entre os valores vale: " + total3);
+                double multiplicacao = primeirovalor * segundovalor;
+                System.out.println("A multiplicação entre os valores vale: " + multiplicacao);
                 break;
 
             case 4:
-                double total4 = (double)primeirovalor / segundovalor;
-                System.out.println("A divisão entre os valores vale: " + total4);
+                double divisao = primeirovalor / segundovalor;
+                System.out.println("A divisão entre os valores vale: " + divisao);
                 break;
 
             default:
